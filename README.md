@@ -1,5 +1,17 @@
-<img alt="Logo" src="http://coderslab.pl/svg/logo-coderslab.svg" width="400">
+# Sit_on_chair
 
-# Zaawansowany HTML, CSS i JS
-Strona powsta³a w ramach kursu prowadzonego przez Coderslab.
-# KRA_FER_S_18_Sit_on_chair
+An example of shop webpage created in the frame of Coders Lab class during course JavaScript developer: React.
+
+**Technology:** HTML5, CSS3, JS.
+
+**Installation:** No additional items are required for installation. For cloning use git clone command.
+
+**Description** The example of a webpage. When "<" or ">" are clicked the photo of a chair changes.
+The form for composition of chair is added.
+
+**Sources:** Additional fonts obtained from https://fonts.google.com and 
+**Status:** in progress
+**To be done: ** RWD
+
+
+
