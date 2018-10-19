@@ -46,10 +46,14 @@ h1, h2 {
     background-color:#27C7AB;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 
 
 /*header*/
-body > header {
+.header {
     background-color: black;
     width: 100%;
     color: white;
@@ -637,7 +641,6 @@ footer span {
 
 .footer_logo {
     padding: 5px;
-    text-transform: uppercase;
     width: 168px;
     display: inline-block;
     font-size: 20px;
