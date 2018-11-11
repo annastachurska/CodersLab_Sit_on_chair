@@ -29,6 +29,7 @@ h1, h2 {
     width: 80%;
     margin: 0 auto;
 }
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +37,7 @@ h1, h2 {
     align-items: center;
     justify-content: space-between;
 }
+
 .green {
     color: #27C7AB;
 }
