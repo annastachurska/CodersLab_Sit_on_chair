@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const dropDown = document.getElementById("nav__display");
-    const dropList = document.querySelector("ul#list");
-    const chairs = document.getElementsByClassName("row2_item");
-    const move = document.querySelectorAll(".move");
+    var dropDown = document.getElementById("nav__display");
+    var dropList = document.querySelector("ul#list");
+    var chairs = document.getElementsByClassName("row2_item");
+    var move = document.querySelectorAll(".move");
 
     dropDown.addEventListener("mouseover", function(){
         dropList.style.display = "block";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         dropList.style.display = "none";
     });
 
-    for (let i=0; i < chairs.length-1; i++) {
+    for (var i=0; i < chairs.length-1; i++) {
         chairs[i].addEventListener("mouseover", function(){
             this.children[0].style.display = "none";
         });
@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     move[1].addEventListener("click", function() {
-        const sliderItem = document.querySelectorAll(".slider li");
-        let n;
-        for (let i=0; i < sliderItem.length; i++) {
+        var sliderItem = document.querySelectorAll(".slider li");
+        var n;
+        for (var i=0; i < sliderItem.length; i++) {
             if (sliderItem[i].className.indexOf("visible") >= 0) {
                 sliderItem[i].classList.toggle("visible");
                 if (i<sliderItem.length-1) {
@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     move[0].addEventListener("click", function() {
-        const sliderItem = document.querySelectorAll(".slider li");
-        let n2;
-        for (let i=0; i < sliderItem.length; i++) {
+        var sliderItem = document.querySelectorAll(".slider li");
+        var n2;
+        for (var i=0; i < sliderItem.length; i++) {
             if (sliderItem[i].className.indexOf("visible") >= 0) {
                 sliderItem[i].classList.toggle("visible");
                 if (i>0) {
@@ -58,12 +58,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    const arrow = document.querySelectorAll(".list_arrow");
-    const listPanel = document.querySelectorAll(".list_panel");
-    let counter1 = 0, counter2 = 0, counter3 = 0;
-    const panelLeft = document.querySelector(".panel_left");
-    const panelRight = document.querySelector(".panel_right");
-    const transport = document.getElementById("transport");
+    var arrow = document.querySelectorAll(".list_arrow");
+    var listPanel = document.querySelectorAll(".list_panel");
+    var counter1 = 0, counter2 = 0, counter3 = 0;
+    var panelLeft = document.querySelector(".panel_left");
+    var panelRight = document.querySelector(".panel_right");
+    var transport = document.getElementById("transport");
 
     arrow[0].addEventListener("click", function(){
 
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }  else {
             panelRight.querySelector(".transport.value").innerText = 0;
         }
-        let suma = Number(panelRight.querySelector(".title.value").innerText) +
+        var suma = Number(panelRight.querySelector(".title.value").innerText) +
             Number(panelRight.querySelector(".color.value").innerText) +
             Number(panelRight.querySelector(".pattern.value").innerText) +
             Number(panelRight.querySelector(".transport.value").innerText);
@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-    for (let i=0; i < listPanel.length; i++) {
-        for (let j=0; j < listPanel[i].children.length; j++) {
+    for (var i=0; i < listPanel.length; i++) {
+        for (var j=0; j < listPanel[i].children.length; j++) {
             listPanel[i].children[j].addEventListener("click", function () {
                 if (this.innerText == "Clair") {
                     panelLeft.querySelector(".title").innerText = "chair " + this.innerText;
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     panelRight.querySelector(".pattern.value").innerText = 50;
                 }
 
-                let suma = Number(panelRight.querySelector(".title.value").innerText) +
+                var suma = Number(panelRight.querySelector(".title.value").innerText) +
                     Number(panelRight.querySelector(".color.value").innerText) +
                     Number(panelRight.querySelector(".pattern.value").innerText) +
                     Number(panelRight.querySelector(".transport.value").innerText);
@@ -150,6 +150,5 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     }
-
-
+    
 });

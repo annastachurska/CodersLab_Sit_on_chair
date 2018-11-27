@@ -11,9 +11,9 @@ The form for composition of chair is added.
 
 ***Sources:*** Additional fonts obtained from https://fonts.google.com and https://www.fontsquirrel.com.
 
-***Status:*** in progress
 
-***To be done: *** RWD
+
+
 
 
 
